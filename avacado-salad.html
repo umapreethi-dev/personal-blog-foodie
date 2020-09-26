@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
     <title>Avacado Salad</title>
     <link rel="stylesheet" href="css\blogs.css" />
     <link
@@ -17,28 +20,33 @@
   <body>
     <div class="blogcontainer">
       <nav class="header">
-        <a href="index.html"> <img class="logo" src="images\logo-new.png" /></a>
+        <a href="index.html">
+          <img class="logo" src="images\logo-new.png" alt="logo"
+        /></a>
         <ul class="main-nav">
           <li class="nav"><a href="index.html">Home</a></li>
           <li class="nav"><a href="#">About</a></li>
           <li class="nav"><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <div class="title topic">
-        <h1>Avacado Salad</h1>
-        <p>
-          Avocado and Cucumber is rich in vitamin K, it can neutralise the acid
-          production in your stomach, thus reducing acidity and heartburn
-        </p>
-        <p class="sub">
-          <strong><em>Posted September 23,2020 by Umapreethi</em></strong>
-        </p>
-      </div>
       <div class="content">
         <article class="article box">
-          <div class="caption">
-          <img class="main-img" src="images/avacado-salad2.jpg" />
-          Avacado salad - foodie</div>
+          <div class="title topic">
+            <h1>Avacado Salad</h1>
+            <p>
+              Avocado and Cucumber is rich in vitamin K, it can neutralise the
+              acid production in your stomach, thus reducing acidity and
+              heartburn
+            </p>
+            <p class="sub">
+              <strong><em>Posted September 23,2020 by Umapreethi</em></strong>
+            </p>
+          </div>
+
+          <figure>
+            <img class="main-img" src="images/avacado-salad2.jpg" alt="Salad" />
+            <figcaption class="caption">Avacado Salad -foodie</figcaption>
+          </figure>
           <h2 class="subtitle">Ingredients</h2>
           <ul>
             <div class="list">
@@ -53,6 +61,13 @@
               <li>Pepper</li>
             </div>
           </ul>
+          <blockquote>
+            Avocado and Cucumber is rich in vitamin K, it can neutralise the
+            acid production in your stomach, thus reducing acidity and
+            heartburn.Avocado and Cucumber is rich in vitamin K, it can
+            neutralise the acid production in your stomach, thus reducing
+            acidity and heartburn
+          </blockquote>
           <h2 class="subtitle">Procedure</h2>
           <ol>
             <li>
@@ -83,13 +98,28 @@
           <h4>Share</h4>
           <div class="social">
             <a href="https://www.facebook.com/">
-              <img src="images/fb.png" width="30px" height="30px" />
+              <img
+                src="images/fb.png"
+                width="30px"
+                height="30px"
+                alt="facebook"
+              />
             </a>
             <a href="https://www.instagram.com/?hl=en">
-              <img src="images/insta.png" width="30px" height="30px"/> 
+              <img
+                src="images/insta.png"
+                width="30px"
+                height="30px"
+                alt="instagram"
+              />
             </a>
             <a href="https://twitter.com/">
-              <img src="images/twit.png" width="30px" height="30px"/>
+              <img
+                src="images/twit.png"
+                width="30px"
+                height="30px"
+                alt="twitter"
+              />
             </a>
           </div>
         </article>
@@ -98,36 +128,34 @@
             <label><h3>Leave a Comment</h3></label>
             <input type="text" placeholder="Fullname" class="name" /><br />
             <input type="email" placeholder="Email" class="email" /><br />
-            <textarea rows="4" cols="50" name="comment" class="comment">Enter your comments...
+            <textarea rows="4" cols="30" name="comment" class="comment">Enter your comments...
             </textarea>
           </form>
         </div>
       </div>
       <aside class="sidebar">
-        <div class="sideGrid">
-          <div class="author">
-            <h3 class="post1">Hi, we're glad you're here!</h3>
-            <img class="logo1" src="images/logo-2.png" />
-            <p>
-              <strong><em>foodie</em></strong> featuring hundreds of easy, fun,
-              and delicious healthy salad and globally-inspired recipes that
-              celebrate the joy of home cooking. Our tips and tricks will have
-              you cooking like a pro in no time.
-            </p>
-            <img class="person" src="images/person.png" />
-            <p>
-              Uma is passionate about design and development of websites using
-              modern technologies. In her spare time, she enjoys cooking,
-              gardening and doing yoga.
-            </p>
-          </div>
-          <div class="post1"><h2>Popular posts</h2></div>
-          <div class="post photo1">
-            <a class="link" href="corn-salad.html">Corn salad</a>
-          </div>
-          <div class="post photo2">
-            <a class="link" href="greek-salad.html">Greek salad</a>
-          </div>
+        <div class="author">
+          <h3 class="post1">Hi, we're glad you're here!</h3>
+          <img class="logo1" src="images/logo-2.png" alt="logo" />
+          <p>
+            <strong><em>foodie</em></strong> featuring hundreds of easy, fun,
+            and delicious healthy salad and globally-inspired recipes that
+            celebrate the joy of home cooking. Our tips and tricks will have you
+            cooking like a pro in no time.
+          </p>
+          <img class="person" src="images/person.png" alt="person" />
+          <p>
+            Uma is passionate about design and development of websites using
+            modern technologies. In her spare time, she enjoys cooking,
+            gardening and doing yoga.
+          </p>
+        </div>
+        <div class="post1"><h2>Popular posts</h2></div>
+        <div class="post photo1">
+          <a class="link" href="corn-salad.html">Corn salad</a>
+        </div>
+        <div class="post photo2">
+          <a class="link" href="greek-salad.html">Greek salad</a>
         </div>
       </aside>
       <footer class="footer">
@@ -137,17 +165,26 @@
             <button class="subscribe">Subscribe</button>
           </form>
         </div>
-        <div id="logo-container">
-          <a href="index.html">
-            <img class="logo-foot" src="images/logo-2.png"/></a>
-        </div>
+
         <div class="social-foot">
           <a href="https://www.facebook.com/">
-            <img src="images/fb.png" width="30px" height="30px"/></a>
+            <img
+              src="images/fb.png"
+              width="30px"
+              height="30px"
+              alt="facebook"
+            />
+          </a>
           <a href="https://www.instagram.com/?hl=en">
-            <img src="images/insta.png" width="30px" height="30px"/></a>
+            <img
+              src="images/insta.png"
+              width="30px"
+              height="30px"
+              alt="instagram"
+          /></a>
           <a href="https://twitter.com/">
-            <img src="images/twit.png" width="35px" height="35px"/></a>
+            <img src="images/twit.png" width="35px" height="35px" alt="twitter"
+          /></a>
         </div>
       </footer>
     </div>

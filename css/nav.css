@@ -1,18 +1,18 @@
 .header {
-  background-color: #424642 ;
-  box-shadow:inset 0 -15px 5px -16px #FFF;
-  display:flex;
+  background-color: #424642;
+  box-shadow: inset 0 -15px 5px -16px #fff;
+  display: flex;
   justify-content: space-between;
 }
 .main-nav {
   float: right;
   list-style: none;
   margin: 0;
-  align-self:center;
+  align-self: center;
 }
 .nav {
-    display:inline-block;
-    padding: 10px;
+  display: inline-block;
+  padding: 10px;
 }
 a {
   text-decoration: none;

@@ -2,7 +2,6 @@
 @import "foot.css";
 body {
   margin: 0px;
-  width: 100%;
 }
 
 /******* Small screens *****/
@@ -10,21 +9,16 @@ body {
 .blogcontainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
   grid-template-areas:
-    "hd "
-    "tit"
-    "main "
+    "hd"
+    "main"
     "sd"
-    "ft ";
-  width: 100vw;
+    "ft";
+  /* width: 100%; */
   font-family: "Roboto", sans-serif;
 }
 .header {
   grid-area: hd;
-}
-.title {
-  grid-area: tit;
 }
 .content {
   grid-area: main;
@@ -46,9 +40,7 @@ body {
 /******* article *******/
 
 .caption {
-    width:image width px;
-     font-size:80%;
-      text-align:center;
+  text-align: center;
 }
 
 h1,
@@ -73,34 +65,25 @@ p {
   background-position: center;
   position: relative;
   background-size: cover;
-  width: 100%;
-  height: 500px;
+  max-width: 100%;
+
   justify-self: center;
 }
 .subtitle {
   text-decoration: underline;
   text-decoration-color: #000000;
 }
-.list {
-  padding: 0px;
-  font-size: auto;
-  margin: 0px;
-}
 
-/***** Author *****/
-
-.author {
-  width: auto;
+blockquote {
+  margin-right: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  line-height: 2em;
+  padding: 10px;
 }
 
 /*** SideGrid ***/
-.sideGrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  padding: 5px;
-  grid-gap: 10px;
-}
+
 .logo1 {
   display: block;
   margin-left: auto;
@@ -150,7 +133,6 @@ p {
   padding: 10px;
 }
 
-
 /**** Form ****/
 
 .form {
@@ -174,17 +156,15 @@ textarea {
 @media (min-width: 600px) and (max-width: 1100px) {
   .blogcontainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr, 4fr, 1.5fr;
     grid-template-areas:
-      "hd hd hd hd hd hd hd hd"
-      "tit tit tit tit tit tit tit tit"
-      "main main main main main main sd sd"
-      "ft ft ft ft ft ft ft ft";
+      "hd hd hd "
+      "main main sd"
+      "ft ft ft ";
     font-family: "Roboto", sans-serif;
   }
   .sidebar {
-    width: 30vw;
     justify-self: center;
   }
 }
@@ -194,17 +174,15 @@ textarea {
 @media (min-width: 1100px) {
   .blogcontainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr, 4fr, 1.5fr;
     grid-template-areas:
-      "hd hd hd hd hd hd hd hd"
-      "tit tit tit tit tit tit tit tit"
-      "main main main main sd sd sd sd"
-      "ft ft ft ft ft ft ft ft";
+      "hd hd hd "
+      "main main sd"
+      "ft ft ft ";
     font-family: "Roboto", sans-serif;
   }
   .sidebar {
-    width: 30vw;
     justify-self: center;
   }
 }
