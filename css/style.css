@@ -1,0 +1,172 @@
+@import "nav.css";
+@import "foot.css";
+body {
+  margin: 0px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px repeat(2,1fr) 140px;
+  grid-template-areas:
+    "hd "
+    "main "
+    "feat "
+    "ft ";
+    width:100vw;
+    height:100vh;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  grid-area: hd;
+}
+#content {
+  grid-area: main;
+}
+.blog {
+  grid-area: feat;
+  margin: 20px;
+}
+.footer {
+  grid-area: ft;
+}
+.heroimage {
+  background-image: url("../images/blog-cover.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 500px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 5vh;
+  border: solid 6px #fff;
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.35);
+  min-width: 80%;
+  margin: 1rem auto;
+  max-width: 80%;
+  padding: 10vw 5vw;
+}
+
+/***** Blogs Grid Medium screens ****/
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  .blog {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px;
+  }
+}
+
+/***** Blogs Grid Large screens ****/
+
+@media (min-width: 1100px) {
+  .blog {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px;
+  }
+}
+
+/***** Blog card *****/
+
+.blogcard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 1fr;
+  grid-template-areas:
+    "photo"
+    "content";
+  height: auto;
+  max-width: 500px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+.photo {
+  grid-area: photo;
+  width: auto;
+}
+#photo1 {
+  background-image: url("../images/avacado-salad2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#photo2 {
+  background-image: url("../images/corn-slad1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#photo3 {
+  background-image: url("../images/greek-salad1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#photo4 {
+  background-image: url("../images/quinoa-salad1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.read-more {
+  color: #d92f58;
+  content: "\2192";
+}
+.read-more:hover {
+  color: blue;
+}
+h3,
+p {
+  margin: 3px;
+}
+h5 {
+  color: #424642;
+}
+h3 {
+  font-family: "Caveat", cursive;
+}
+.card-content {
+  grid-area: content;
+}
+
+/***** Medium screens *****/
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  .container {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "feat feat feat feat feat feat feat feat"
+      "ft ft ft ft ft ft ft ft";
+      
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+/***** Large screens *****/
+
+@media (min-width: 1100px) {
+  .container {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "feat feat feat feat feat feat feat feat"
+      "ft ft ft ft ft ft ft ft";
+    font-family: "Roboto", sans-serif;
+  }
+}

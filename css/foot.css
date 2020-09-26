@@ -1,0 +1,34 @@
+.footer {
+  display:flex;
+  border-top: 1px solid rgb(192, 185, 185);
+  box-shadow:inset 0 15px 5px -16px #111;
+  color: #ffffff;
+  position: relative;
+  padding: 20px;
+  justify-content: space-between;
+}
+.co {
+  position: absolute;
+  bottom: 0;
+  color:#000000;
+}
+.social-foot img {
+  padding-right:20px;
+  
+}
+.logo-container {
+  text-align:center;
+  margin: 0 auto;
+}
+.subscribe {
+  border-radius: 10px;
+  background-color: #424642 ;
+  color:#ffc107;
+  padding:8px;
+  border:none;
+}
+input {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
