@@ -13,6 +13,15 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js">
+      $.getJSON( "https://ipapi.co/json/", function( data ) {
+   if(data.country == "US"){ location.href="https://umapreethi-dev.github.io/personal-blog-foodie/greek-salad.html"}
+   else {
+     location.href="https://umapreethi-dev.github.io/personal-blog-foodie/index.html"
+   }
+  });
+      
+    </script>
   </head>
   <body>
     <div class="blogcontainer">
