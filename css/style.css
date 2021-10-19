@@ -16,9 +16,13 @@ body {
   height: 100vh;
   font-family: "Roboto", sans-serif;
 }
+
 .header {
-  grid-area: hd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 #content {
   grid-area: main;
 }
@@ -168,5 +172,11 @@ h3 {
       "feat feat feat feat feat feat feat feat"
       "ft ft ft ft ft ft ft ft";
     font-family: "Roboto", sans-serif;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .search-bar {
+    display: none;
   }
 }
