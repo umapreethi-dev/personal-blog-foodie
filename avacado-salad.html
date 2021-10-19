@@ -16,6 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
       rel="stylesheet"
     />
+     <!-- Adding Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="blogcontainer">
@@ -125,11 +131,13 @@
         </article>
         <div class="form">
           <form>
-            <label><h3>Leave a Comment</h3></label>
-            <input type="text" placeholder="Fullname" class="name" /><br />
-            <input type="email" placeholder="Email" class="email" /><br />
+            <label><h3>Leave a Comment</h3></label><br>
+            <input type="text" placeholder="Fullname" class="name" /><br /><br>
+            <input type="email" placeholder="Email" class="email" /><br /><br>
             <textarea rows="4" cols="30" name="comment" class="comment">Enter your comments...
-            </textarea>
+                </textarea
+            ><br><br>
+            <button type="submit" class="btn btn-warning">Submit</button>
           </form>
         </div>
       </div>
