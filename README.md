@@ -24,9 +24,9 @@ Hacktoberfest is a month-long celebration of open source, organised by Digital O
 5. Next `git add .` to add the changes to the branch.
 6.  commit the changes 
  ``` git commit -m "Add description about changes" ```
-7. Push the changes to Github repository
+7. Push the changes to GitHub repository
 ``` git push origin <you-branch-name> ```
-8. Go to your github and press `Compare & pull request` button.
+8. Go to your GitHub and press `Compare & pull request` button.
 
 Congratulations! If you are doing your first PR and for others who are learning to contribute to open source.
 
