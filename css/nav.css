@@ -12,7 +12,13 @@
 }
 .nav {
   display: inline-block;
-  padding: 10px;
+  padding: 10px 20px;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+}
+.nav a:hover{
+  color: #fdb50d;
+  transition: color 0.8s;
 }
 a {
   text-decoration: none;
