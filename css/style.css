@@ -29,6 +29,7 @@ body {
 .blog {
   grid-area: feat;
   margin: 20px;
+  
 }
 .footer {
   grid-area: ft;
@@ -47,9 +48,10 @@ body {
 .title {
   color: #ffffff;
   text-align: center;
-  font-family: "Caveat", cursive;
-  font-size: 5vh;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 7vh;
   border: solid 6px #fff;
+  border-radius: 10px;
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.35);
   min-width: 80%;
   margin: 1rem auto;
@@ -76,6 +78,8 @@ body {
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 50% 50%;
     grid-gap: 10px;
+    position: relative;
+    left:5%;
   }
 }
 
@@ -105,21 +109,25 @@ body {
   background-image: url("../images/avacado-salad2.jpg");
   background-size: cover;
   background-position: center;
+  border-radius: 5px;
 }
 #photo2 {
   background-image: url("../images/corn-slad1.jpg");
   background-size: cover;
   background-position: center;
+  border-radius: 5px;
 }
 #photo3 {
   background-image: url("../images/greek-salad1.jpg");
   background-size: cover;
   background-position: center;
+  border-radius: 5px;
 }
 #photo4 {
   background-image: url("../images/quinoa-salad1.jpg");
   background-size: cover;
   background-position: center;
+  border-radius: 5px;
 }
 .read-more {
   color: #d92f58;
